@@ -7,13 +7,25 @@ The input file must be an __SVG font__ file. This package is used from the __Com
 
 The output glyph map is a json object where the keys are the glyph names (glyph-name) and the values are character codes of the gliphs unicode (unicode) values.
 
+##CLI interface
+
+```
+Usage: svgfont2glyphmap <fontFile> <outputFile>
+```
+
+example:
+
+```
+$ svgfont2glyphmap ./myIcons.svg ./myIcons-map.json
+```
+
 
 ### Example input
 
 myIcons.svg
 
 ```SVG
-<?xml version="1.0" standalone="no"?> 
+<?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <defs>
@@ -42,17 +54,4 @@ myIcons-map.json
   "triangle-up": 59940,
   "triangle-down": 59939
 }
-```
-
-
-##CLI interface
-
-```
-Usage: svgfont2glyphmap <fontFile> <outputFile>
-```
-
-example:
-
-```
-$ svgfont2glyphmap ./myIcons.svg ./myIcons-map.json
 ```
