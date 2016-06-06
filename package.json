@@ -1,0 +1,24 @@
+{
+  "name": "svgfont2glyphmap",
+  "version": "1.0.0",
+  "description": "Takes an SVG font file and outputs a glyph map json file",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RShergold/svgfont2glyphmap.git"
+  },
+  "author": "Remi Shergold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RShergold/svgfont2glyphmap/issues"
+  },
+  "homepage": "https://github.com/RShergold/svgfont2glyphmap#readme",
+  "bin": {
+    "svgfont2glyphmap": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "lodash": "^4.13.1",
+    "xml2js": "^0.4.16"
+  }
+}
